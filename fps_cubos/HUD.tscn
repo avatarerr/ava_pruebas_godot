@@ -1,0 +1,26 @@
+[gd_scene format=2]
+
+[node name="HUD" type="Control"]
+margin_right = 20.0
+margin_bottom = 20.0
+
+[node name="Mirilla" type="Control" parent="."]
+margin_left = -9.59114
+margin_top = -10.7546
+margin_right = 10.4089
+margin_bottom = 9.24542
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line2D" type="Line2D" parent="Mirilla"]
+points = PoolVector2Array( 0, 10, 16.9445, 10, 20, 10 )
+width = 2.0
+default_color = Color( 0.466667, 0.490196, 0.619608, 1 )
+texture_mode = 53
+
+[node name="Line2D2" type="Line2D" parent="Mirilla"]
+points = PoolVector2Array( 10, 0, 10, 20 )
+width = 2.0
+default_color = Color( 0.466667, 0.490196, 0.619608, 1 )
+texture_mode = 152333488

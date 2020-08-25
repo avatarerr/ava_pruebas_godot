@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://art/particulas/particle_fuego2.png" type="Texture" id=1]
+[ext_resource path="res://objetos/mini/ImpactoBalaPared.cs" type="Script" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_unshaded = true
+vertex_color_use_as_albedo = true
+params_blend_mode = 1
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=2]
+emission_shape = 1
+emission_sphere_radius = 0.5
+gravity = Vector3( 0, 14, 0 )
+initial_velocity = 1.0
+angular_velocity = 1.0
+angular_velocity_random = 1.0
+linear_accel = 3.0
+scale = 3.0
+
+[sub_resource type="QuadMesh" id=3]
+
+[node name="ImpactoBalaPared" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="Particles" type="Particles" parent="."]
+transform = Transform( 0.17181, 0, 0, 0, 0.17181, 0, 0, 0, 0.17181, 0, 0, 0 )
+material_override = SubResource( 1 )
+emitting = false
+lifetime = 0.5
+one_shot = true
+speed_scale = 2.0
+process_material = SubResource( 2 )
+draw_pass_1 = SubResource( 3 )
+
+[node name="Autodestruye" type="Timer" parent="."]
+[connection signal="timeout" from="Autodestruye" to="." method="autodestruye"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/revolver1.obj-0740636e1d5f34f3c672984d53cb4980.mesh"
+
+[deps]
+
+files=[ "res://.import/revolver1.obj-0740636e1d5f34f3c672984d53cb4980.mesh" ]
+
+source_file="res://art/modelos3d/revolver1/revolver1.obj"
+dest_files=[ "res://.import/revolver1.obj-0740636e1d5f34f3c672984d53cb4980.mesh", "res://.import/revolver1.obj-0740636e1d5f34f3c672984d53cb4980.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
