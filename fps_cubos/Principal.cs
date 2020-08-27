@@ -205,7 +205,6 @@ public class Principal : Spatial
                 }
 
                 // pintamos el impacto de la bala
-                RayCast ray = (RayCast)objcamera.GetNode("RayCast");
 
                 // debug con cajas en vez de impacto 
 
